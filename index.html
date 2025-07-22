@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cubie - learning platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="container-header">
+        <div class="logo-mobile">
+          <a href="#home"
+            ><img src="media/Logo.svg" alt="logo" height="40px"
+          /></a>
+        </div>
+        <ul class="nav-links">
+          <li class="logo">
+            <a href="#home"
+              ><img src="media/Logo.svg" alt="logo" height="40px"
+            /></a>
+          </li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="http://localhost:5173/login" target="_blank" class="cta-button"
+          >Login</a
+        >
+
+        <!-- Mobile Menu Toggle -->
+        <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" onclick="toggleMobileMenu()"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <!-- Mobile Menu Header with Logo and Close Button -->
+      <div class="mobile-menu-header">
+        <div class="mobile-menu-logo">
+          <a href="#home" onclick="toggleMobileMenu()"
+            ><img src="media/Logo.svg" alt="logo" height="40px"
+          /></a>
+        </div>
+        <button class="mobile-close-button" onclick="toggleMobileMenu()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <ul>
+        <li><a href="#features" onclick="toggleMobileMenu()">Features</a></li>
+        <li><a href="#pricing" onclick="toggleMobileMenu()">Pricing</a></li>
+        <li><a href="#team" onclick="toggleMobileMenu()">Team</a></li>
+        <li>
+          <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+        </li>
+      </ul>
+      <div class="mobile-cta">
+        <a
+          href="http://localhost:5173/login"
+          class="cta-button"
+          onclick="toggleMobileMenu()"
+          >Login</a
+        >
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h2>
+            Build for <span class="hero_emphasize">kids</span><br />
+            Designed for <span class="hero_emphasize">teachers</span><br / >
+            Trusted by <span class="hero_emphasize">families</span><br />
+          </h2>
+          <p>
+            Fun and intuitive learning platform to connects students, teachers,
+            and families.
+          </p>
+          <a href="#" class="cta-button">Cubie Proposal</a>
+        </div>
+        <div class="hero-visual">
+          <img src="media/hero.png" alt="hero" />
+          <!-- <div class="dashboard-preview">
+            <div class="mock-chart"></div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container section-container">
+        <h2 class="section-title">Main Features</h2>
+        <p>
+          Cubie provides personalized homepages, smart dashboards, and
+          AI-powered practice tools to support students, teachers, and families.
+          The platform makes it easy for teachers to manage lessons, upload
+          homework, and give feedback, helping everyone stay connected and
+          focused on learning.
+        </p>
+        <!-- ========= -->
+        <div class="features-grid">
+          <div class="feature-img-card feature-img-1">
+            <img
+              src="media/Role Based Homepage.png"
+              alt="Role Based Homepage"
+            />
+          </div>
+
+          <div class="feature-card feature-card-odd feature-text-1">
+            <div class="feature-icon-title">
+              <h3>Role-Based Homepage</h3>
+              <div class="feature-icon">
+                <img src="media/icons/home.svg" alt="Role Based Homepage" />
+              </div>
+            </div>
+
+            <p>
+              Each user — student, teacher and family — gets a personalized
+              homepage designed for their unique needs.
+            </p>
+          </div>
+          <!-- ========= -->
+          <div class="feature-card feature-card-even feature-text-2">
+            <div class="feature-icon-title">
+              <h3>Content Management</h3>
+              <div class="feature-icon">
+                <img
+                  src="media/icons/Content Management.svg"
+                  alt="Content Management"
+                />
+              </div>
+            </div>
+            <p>
+              Teachers can easily manage lesson materials, upload homework, and
+              give feedback on student submissions using a clear and organized
+              dashboard.
+            </p>
+          </div>
+          <div class="feature-img-card feature-img-2">
+            <img src="media/Content Management.png" alt="Content Management" />
+          </div>
+
+          <!-- ========= -->
+          <div class="feature-img-card feature-img-3">
+            <img
+              src="media/AI-Powered Smart Practice.png"
+              alt="AI-Powered Smart Practice"
+            />
+          </div>
+
+          <div class="feature-card feature-card-odd feature-text-3">
+            <div class="feature-icon-title">
+              <h3>AI-Powered Smart Practice</h3>
+              <div class="feature-icon">
+                <img
+                  src="media/icons/AI-Powered.svg"
+                  alt="AI-Powered Smart Practice"
+                />
+              </div>
+            </div>
+            <p>
+              Integrated AI creates personalized practice sessions by generating
+              age-appropriate questions from lesson content.
+            </p>
+          </div>
+          <!-- ========= -->
+
+          <div class="feature-card feature-card-even feature-text-4">
+            <div class="feature-icon-title">
+              <h3>Smart Dashboard & Data Visualization</h3>
+              <div class="feature-icon">
+                <img
+                  src="media/icons/Smart Dashboard.svg"
+                  alt="Smart Dashboard"
+                />
+              </div>
+            </div>
+            <p>
+              A core feature that delivers clear, visual insights into student
+              learning, tailored for both teachers and families.
+            </p>
+          </div>
+
+          <div class="feature-img-card feature-img-4">
+            <img
+              src="media/Smart Dashboard & Data Visualization.png"
+              alt="Smart Dashboard & Data Visualization"
+            />
+          </div>
+          <!-- ========= -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+      <div class="container pricing-container">
+        <h2 class="section-title">Pricing and Plans</h2>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Cubie Starter</h3>
+            <div class="price">2,000 CAD</div>
+            <div class="price-period">/Yearly</div>
+            <ul class="pricing-features">
+              <li>Uses School Server / API</li>
+              <li>Includes up to 300 students</li>
+              <li>$5 per additional student</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3>Cubie Smart</h3>
+            <div class="price">2,500 CAD</div>
+            <div class="price-period">/Yearly</div>
+            <ul class="pricing-features">
+              <li>Uses School Server / API</li>
+              <li>AI Practice Feature included</li>
+              <li>Includes up to 300 students</li>
+              <li>$5 per additional student</li>
+            </ul>
+          </div>
+          <div class="pricing-card featured">
+            <h3>Cubie Cloud Starter</h3>
+            <div class="price">4,000 CAD</div>
+            <div class="price-period">/Yearly</div>
+            <ul class="pricing-features">
+              <li>Uses Cubie's Server / API</li>
+              <li>Includes up to 300 students</li>
+              <li>$5 per additional student</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3>Cubie Cloud Smart</h3>
+            <div class="price">4,500 CAD</div>
+            <div class="price-period">/Yearly</div>
+            <ul class="pricing-features">
+              <li>Uses Cubie's Server / API</li>
+              <li>AI Practice Feature included</li>
+              <li>Includes up to 300 students</li>
+              <li>$5 per additional student</li>
+            </ul>
+          </div>
+        </div>
+        <ul>
+          <li>All plans: 10% of revenue goes toward social good</li>
+          <li>AI Practice is exclusive to Smart Plans</li>
+          <li>
+            Pre-register now,The first 20 schools get one month of full access
+            for free
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+      <div class="container">
+        <h2 class="section-title team-title">Meet the Team</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="member-avatar">
+              <img src="media/Cubie-GroupPic/Naomi.png" alt="team member" />
+              <div class="member-role-badge">PM</div>
+            </div>
+            <div class="member-name">Naomi Fujii</div>
+            <div class="member-role">Full Stack Developer</div>
+            <div class="member-linkedin">
+              <a
+                href="https://www.linkedin.com/in/naomi-fujii-2152b8290/"
+                target="_blank"
+              >
+                <div class="linkedin-icon">
+                  <img src="media/LI-In-Bug.png" alt="LinkedIn" />
+                </div>
+                <div class="linkedin-text">in/naomi-fujii</div>
+              </a>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">
+              <img src="media/Cubie-GroupPic/Ryo.png" alt="team member" />
+              <div class="member-role-badge">Lead</div>
+            </div>
+            <div class="member-name">Ryo Ito</div>
+            <div class="member-role">Full Stack Developer</div>
+            <div class="member-linkedin">
+              <a href="https://www.linkedin.com/in/ryo-ito46/" target="_blank">
+                <div class="linkedin-icon">
+                  <img src="media/LI-In-Bug.png" alt="LinkedIn" />
+                </div>
+                <div class="linkedin-text">in/ryo-ito</div>
+              </a>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">
+              <img src="media/Cubie-GroupPic/Francisco.png" alt="team member" />
+            </div>
+            <div class="member-name">Francisco Wang</div>
+            <div class="member-role">Full Stack Developer</div>
+            <div class="member-linkedin">
+              <a
+                href="https://www.linkedin.com/in/francisco-wang-300505363/"
+                target="_blank"
+              >
+                <div class="linkedin-icon">
+                  <img src="media/LI-In-Bug.png" alt="LinkedIn" />
+                </div>
+                <div class="linkedin-text">in/francisco-wang</div>
+              </a>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">
+              <img src="media/Cubie-GroupPic/Semih.png" alt="team member" />
+            </div>
+            <div class="member-name">Semih Cetin</div>
+            <div class="member-role">Full Stack Developer</div>
+            <div class="member-linkedin">
+              <a
+                href="https://www.linkedin.com/in/semih-cetin-b531bb6a/"
+                target="_blank"
+              >
+                <div class="linkedin-icon">
+                  <img src="media/LI-In-Bug.png" alt="LinkedIn" />
+                </div>
+                <div class="linkedin-text">in/semih-cetin</div>
+              </a>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">
+              <img src="media/Cubie-GroupPic/Poppy.png" alt="team member" />
+              <div class="member-role-badge">Lead</div>
+            </div>
+            <div class="member-name">Poppy Prasartset</div>
+            <div class="member-role">UX/UI Designer</div>
+            <div class="member-linkedin">
+              <a
+                href="https://www.linkedin.com/in/pimsirin-prasartset/"
+                target="_blank"
+              >
+                <div class="linkedin-icon">
+                  <img src="media/LI-In-Bug.png" alt="LinkedIn" />
+                </div>
+                <div class="linkedin-text">in/pimsirin-prasartset</div>
+              </a>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">
+              <img src="media/Cubie-GroupPic/Suro.png" alt="team member" />
+            </div>
+            <div class="member-name">Suro Kim</div>
+            <div class="member-role">UX/UI Designer</div>
+            <div class="member-linkedin">
+              <a href="https://www.linkedin.com/in/suro-kim/" target="_blank">
+                <div class="linkedin-icon">
+                  <img src="media/LI-In-Bug.png" alt="LinkedIn" />
+                </div>
+                <div class="linkedin-text">in/suro-kim</div>
+              </a>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">
+              <img src="media/Cubie-GroupPic/Terrance.png" alt="team member" />
+            </div>
+            <div class="member-name">Terrance Au</div>
+            <div class="member-role">UX/UI Designer</div>
+            <div class="member-linkedin">
+              <a href="linkedin.com/in/tsun-man-au-a92a65261" target="_blank">
+                <div class="linkedin-icon">
+                  <img src="media/LI-In-Bug.png" alt="LinkedIn" />
+                </div>
+                <div class="linkedin-text">in/tsun-man-au</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-container">
+        <div class="contact">
+          <div>
+            <img src="media/Logo-big.svg" alt="Cubie Logo" height="80px" />
+          </div>
+          <h2>Contact Cubie</h2>
+          <p>Have a question? Let's build brighter learning together.</p>
+        </div>
+        <div class="contact-form">
+          <form
+            class="contact-form"
+            action="mailto:info@cubie.ai"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your.email@example.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Leave us a few words</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Drop a line and say hi!"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <p>&copy; 2024 Analytics Pro. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

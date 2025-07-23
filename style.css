@@ -253,7 +253,7 @@ nav {
 
 .cta-button:hover {
   background: #ea580c;
-  transform: translateY(-2px);
+  transform: translateY(-2px) !important;
 }
 
 /* Hero Section */
@@ -609,6 +609,13 @@ nav {
   border-radius: 50%;
 }
 
+/* right position avatar adjustment */
+.position-right-avatar img {
+  object-position: 80% 50% !important; /* より右に寄せる */
+}
+
+
+
 .member-name {
   font-size: 18px;
   font-weight: 600;
@@ -767,9 +774,8 @@ nav {
 }
 
 .submit-btn:hover {
-  background: #2563eb;
+  background: #ea580c;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(49, 124, 216, 0.3);
 }
 
 .submit-btn:active {
@@ -815,9 +821,8 @@ footer {
   }
 
   .hero-content {
-    padding-bottom: 0px;
+    padding-bottom: 50px;
   }
-
   .container {
     padding: 0 30px;
   }
@@ -898,7 +903,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .cta-button {
+  .login-button {
     display: none;
   }
 

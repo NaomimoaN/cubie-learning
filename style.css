@@ -418,6 +418,56 @@ nav {
   line-height: 1.6;
 }
 
+/* Sub Features Section */
+
+.sub-features-title {
+  margin: 5rem 0;
+  font-size: 24px !important;
+  text-align: center;
+
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.sub-features-button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  transform-origin: bottom center; /* 変形の基準点を下部中央に設定 */
+}
+
+.sub-features-button:hover {
+  transform: translateY(-4px);
+}
+
+.sub-features-button:active {
+  transform: scaleY(0.5); /* translateYを削除して、下部を固定 */
+  transition: transform 0.1s ease;
+}
+
+.sub-features-button:active:hover {
+  transform: scaleY(0.7); /* translateYを削除して、下部を固定 */
+}
+
+.sub-features-grid-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.sub-features-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-features-grid p {
+  font-size: 16px;
+}
+
 /* Pricing Section */
 .pricing {
   padding: 4rem 0;
@@ -613,8 +663,6 @@ nav {
 .position-right-avatar img {
   object-position: 80% 50% !important; /* より右に寄せる */
 }
-
-
 
 .member-name {
   font-size: 18px;

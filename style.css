@@ -454,7 +454,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .sub-features-grid {
@@ -462,6 +462,11 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.sub-features-grid img {
+  width: 100px;
+  height: 100px;
 }
 
 .sub-features-grid p {

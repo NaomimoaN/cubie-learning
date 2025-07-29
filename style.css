@@ -17,6 +17,15 @@
 
 a {
   text-decoration: none;
+  color: var(--text-primary);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+a:visited {
+  color: var(--text-primary);
 }
 
 body {
@@ -220,6 +229,10 @@ nav {
   padding: 0.5rem;
 }
 
+.mobile-cta a:hover {
+  color: white;
+}
+
 .mobile-overlay {
   display: block;
   position: fixed;
@@ -253,7 +266,37 @@ nav {
 
 .cta-button:hover {
   background: #ea580c;
+  color: white;
   transform: translateY(-2px) !important;
+}
+
+.cta-button:visited {
+  color: white;
+}
+
+.cta-button-blue {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+
+
+.cta-button-blue:hover {
+  background: #1157cf;
+  color: white;
+  transform: translateY(-2px) !important;
+}
+
+.cta-button-blue:visited {
+  color: white;
 }
 
 /* Hero Section */
@@ -420,6 +463,15 @@ nav {
 
 /* Sub Features Section */
 
+.sub-features-grid-container {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
 .sub-features-title {
   margin: 5rem 0;
   font-size: 24px !important;
@@ -454,7 +506,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .sub-features-grid a {
@@ -944,6 +996,14 @@ footer {
   .feature-img-4 {
     order: 7;
   }
+
+  /* .sub-features-grid-container {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+} */
 
   .contact-container {
     display: flex;
